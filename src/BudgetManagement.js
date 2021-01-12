@@ -76,7 +76,10 @@ const Details = () => {
                     </div>
                     <button type='submit' className='btn' onClick={saveData} >
                         Save the Data
-      </button>
+                    </button>
+                    <button type='submit' className='btn' onClick={saveData} >
+                        Get the Data
+                    </button>
 
       <about/>
                 </form>
