@@ -12,6 +12,10 @@ router.get('/:day',Mongoose.getData)
 
 router.post('/savedata',Mongoose.createdData)
 
+router.patch('/update/:day',Mongoose.updateData)
+
+router.delete('/delete/:day',Mongoose.deleteData)
+
 router.get('*',(req,res,next) => {
     res.status(404).json({message:"cant find this route"})
 })
