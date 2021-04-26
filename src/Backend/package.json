@@ -12,6 +12,8 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.17.1",
+    "express-interceptor": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.3",
     "mongoose": "^5.11.11",
     "nodemon": "^2.0.6"

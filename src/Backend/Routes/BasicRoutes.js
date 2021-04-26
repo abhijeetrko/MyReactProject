@@ -8,13 +8,22 @@ const bodyParser=require('body-parser');
 
 router.get('/test',Mongoose.getData)
 
-router.get('/:day',Mongoose.getData)
+router.get('/all',Mongoose.getDataAll)
 
+router.get('/average',Mongoose.getAverage)
+router.get('/:date',Mongoose.getData)
 router.post('/savedata',Mongoose.createdData)
 
-router.patch('/update/:day',Mongoose.updateData)
+router.post('/login',Mongoose.Login)
 
-router.delete('/delete/:day',Mongoose.deleteData)
+router.post('/loginWithToken',Mongoose.loginWithToken)
+
+router.post('/uploadFile',Mongoose.getFile)
+
+
+router.patch('/update/:date',Mongoose.updateData)
+
+router.delete('/delete/:date',Mongoose.deleteData)
 
 router.get('*',(req,res,next) => {
     res.status(404).json({message:"cant find this route"})
