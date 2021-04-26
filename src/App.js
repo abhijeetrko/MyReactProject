@@ -7,6 +7,7 @@ import BudgetManagement from './BudgetManagement'
 import Login from './Login'
 import RecordManagement from './RecordManagement'
 import Location from './Location'
+import Feedback from './Feedback'
 import './App.css';
 import {BrowserRouter as Router,Route,Switch,Link} from 'react-router-dom'
 
@@ -33,6 +34,9 @@ function App() {
      </Route>
      <Route exact path="/Login">
    <Login></Login>
+     </Route>
+     <Route exact path="/feedback">
+       <Feedback></Feedback>
      </Route>
 
      <Route exact path="/Record">

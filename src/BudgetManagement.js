@@ -1,6 +1,6 @@
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 import Loader from 'react-loader-spinner'
-import axios from '/home/abhijeet/myworkspace/projects/react-projects/25-shop-Management/shopmanagement/node_modules/axios'
+import axios from '../node_modules/axios'
 
 
 import React, { useState, useRef, useEffect } from 'react'

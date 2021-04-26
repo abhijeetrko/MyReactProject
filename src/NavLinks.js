@@ -16,6 +16,8 @@ export default function NavLinks() {
             <Link to='/Login'>Login     </Link>
             <Link to ='/Record'>RecordManagement     </Link>
             <Link to ='/Location'>Find Us on Google Maps</Link>
+
+            <Link to='/feedback'>Rate US</Link>
         </div>
     )
 }
