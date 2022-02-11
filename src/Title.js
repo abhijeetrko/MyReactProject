@@ -9,10 +9,9 @@ export default function Title() {
     return (
      <div>
       <article>
-      <h1>Welcome to Marathe ICE Cream Corner</h1>
+      <h1>Welcome to Marathe Home Products</h1>
       </article>
-      <img src="../UI Images/DSC_0370.JPG" alt="abhi"/>
-       <Carousel>
+       {/* <Carousel>
        <div>
            <img src='/UI Images/DSC_0370.JPG' alt="abhi1" />
            <p className="legend">Legend 1</p>
@@ -21,7 +20,7 @@ export default function Title() {
            <img src='/UI Images/DSC_0370.JPG' alt="abhi2" />
            <p className="legend">Legend 2</p>
        </div>
-   </Carousel>
+   </Carousel> */}
 
    </div>
     )
