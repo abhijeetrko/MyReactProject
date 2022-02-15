@@ -36,7 +36,7 @@ return <div>
       return ((avg=acc+cur))
   })}</h3>
   <h4>avg</h4>
-  <h3>Tell Us Someting that we can improve so that</h3>
+  <h3>Tell Us Someting that we can improve so that going further</h3>
   <textarea></textarea>
   {arr.map((t)=>{
       console.log(t)
