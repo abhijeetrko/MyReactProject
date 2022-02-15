@@ -18,6 +18,7 @@ export default function NavLinks() {
             <Link to ='/Location'>Find Us on Google Maps</Link>
 
             <Link to='/feedback'>Rate US</Link>
+            <Link to='/VisitorsInfo'>VisitorsInfo</Link>
         </div>
     )
 }

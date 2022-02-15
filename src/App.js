@@ -10,6 +10,7 @@ import Location from './Location'
 import Feedback from './Feedback'
 import './App.css';
 import {BrowserRouter as Router,Route,Switch,Link} from 'react-router-dom'
+import VisitorsInfo from './VisitorsInfo'
 
 function App() {
   
@@ -45,7 +46,9 @@ function App() {
      <Route exact path="/Location">
     <Location></Location>
      </Route>
-     
+     <Route exact path="/VisitorsInfo">
+       <VisitorsInfo></VisitorsInfo>
+     </Route>
  
     </div>
     </Switch>
