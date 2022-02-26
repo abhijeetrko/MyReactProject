@@ -2,21 +2,33 @@ import React from 'react'
 import {useFormik} from 'formik'
 
 function VisitorsInfo() {
-
-
+    async function saveUsers(values){
+        console.log ('calling through save' , values);
+        const result = await fetch("http://localhost:5500/saveUser",{
+            method:'POST',
+            headers:{'Content-type':'application/json'},
+            body:JSON.stringify({
+                name:values.name,
+                mail:values.mail   
+            })
+        })
+    }
     const formik = useFormik({
         initialValues: {
-            'name' : '',
-            'mail' : ''
+            'name' : 'vinod',
+            'mail' : 'vinod@gmail.com'
+        },
+        onSubmit : values => {
+            //console.log('saving' + values)
+            saveUsers(values);
         }
+        
     })
-
-    console.log(formik.values , 'Form Valyues')
     return (
         <React.Fragment>
         <div>
             <h1>Here we will collect all the VisitorsInfo</h1>
-            <form>
+            <form onSubmit={formik.handleSubmit}>   
                 <label for="Name"></label>
                 <input type="text" id="name" placeholder="name" name='name' onChange={formik.handleChange} value={formik.values.name}></input>
                 <br></br>
@@ -30,5 +42,4 @@ function VisitorsInfo() {
         </React.Fragment>
     )
 }
-
 export default VisitorsInfo
