@@ -24,7 +24,10 @@ router.post('/uploadFile',Mongoose.getFile)
 router.patch('/update/:date',Mongoose.updateData)
 
 router.delete('/delete/:date',Mongoose.deleteData)
-
+//Save User
+router.post('/saveUser',Mongoose.saveUser);
+//Get All Users
+router.get('/getAllUsers',Mongoose.getUsers);
 router.get('*',(req,res,next) => {
     res.status(404).json({message:"cant find this route"})
 })
